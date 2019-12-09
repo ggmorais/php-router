@@ -11,7 +11,7 @@ function sayHello($name) {
   return 'Hello, $name!';
 }
 
-$router->get('/sayHello', function(<b>$req</b>, $res) {  
+$router->get('/sayHello', function(<b>$req</b>, $res) use sayHello {  
   $helloMsg = sayHello($req->name);
   $res->send($helloMsg);  
 });
