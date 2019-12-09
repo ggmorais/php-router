@@ -7,6 +7,8 @@ PHP Simple routing system for <b>APIs</b> based.
 
 <b>$req</b> = The value getted from /sayHello<b>?name=Johnson</b>
 <pre>
+require 'Router.php'
+
 function sayHello($name) {  
   return 'Hello, $name!';
 }
