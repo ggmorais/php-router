@@ -28,5 +28,5 @@ Hello, Johnson!
 
 The same works for POST request, we just need to switch the word "get" to "post"
 <pre>
-$router->post('/sayHello', ...)
+$router-><b>post</b>('/sayHello', ...)
 </pre>
