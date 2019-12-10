@@ -6,6 +6,8 @@ PHP Simple routing system for <b>APIs</b> based.
 <b>GET Request:</b>  
 
 <b>$req</b> = The value obtained from /sayHello<b>?name=Johnson</b>
+<b>$res</b> = The output call. The only method avaiable for now is <i>send</i>, this returns an object.
+
 <pre>
 require 'Router.php'
 
@@ -15,7 +17,7 @@ function sayHello($name) {
   return 'Hello, $name!';
 }
 
-$router->get('/sayHello', function(<b>$req</b>, $res) use sayHello {  
+$router->get('/sayHello', function(<b>$req</b>, <b>$res</b>) use sayHello {  
   $helloMsg = sayHello($req->name);
   $res->send($helloMsg);  
 });
