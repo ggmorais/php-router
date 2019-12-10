@@ -25,3 +25,8 @@ The example will output:
 <pre>
 Hello, Johnson!
 </pre>
+
+The same works for POST request, we just need to switch the word "get" to "post"
+<pre>
+$router->post('/sayHello', ...)
+</pre>
